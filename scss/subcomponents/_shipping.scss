@@ -1,0 +1,59 @@
+.shipping{
+    margin-top: $myMeasure;
+
+    .wrapper{
+         @include wrapper(0.5);
+     }
+
+    h2{
+        margin-bottom: 1rem;
+    }
+
+    .fullname{
+        label{
+           @extend %label; 
+        }        
+    }
+
+    .address{
+        label{
+           @extend %label; 
+        }        
+    }
+
+    .city{
+        label{
+           @extend %label; 
+        }        
+    }
+
+    .country-code{
+        display: flex;
+        justify-content: space-between;
+        margin-top:$myMeasure;
+
+        .country{
+            width: 27%;
+            label{
+                @extend %label;
+            }
+
+            select{
+                width: 100%;
+                padding: 0.6rem 0 0.6rem 1.3rem;
+            }
+        }
+
+        .post-code{
+            width:70%;
+            label{
+                @extend %label;
+            }
+        }
+    }
+
+    .check{
+        margin-top: 1rem;
+    }
+    
+}

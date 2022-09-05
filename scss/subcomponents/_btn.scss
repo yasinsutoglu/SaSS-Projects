@@ -1,0 +1,16 @@
+.btn{
+    margin-top: $myMeasure;
+    display: flex;
+    justify-content: flex-end;
+    button{
+        background-color: $secondaryColor;
+        padding: .5rem;
+        border-radius: 15px;
+        color:#fff;
+        font-size:1.1rem;
+        font-weight: 600;
+        border:none;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px grey;
+    }
+}

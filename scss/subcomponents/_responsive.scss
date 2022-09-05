@@ -1,0 +1,11 @@
+@media screen and (max-width:950px) {
+    .row{
+        display:flex;
+        flex-direction: column-reverse;
+    }
+
+    .col-left , .col-right{
+        width: 90%;
+        margin:auto;
+    }
+}

@@ -1,0 +1,25 @@
+%p{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    opacity: 0.8;       
+}
+
+.result{
+    margin-top: 3rem;
+    .result-shipping{
+        border-top: $myBorder;
+        p{
+            @extend %p;
+        }
+    }
+
+    .result-total{
+        margin-top: 0.5rem;
+        border-top: $myBorder;
+        p{
+            @extend %p;
+        }
+    }
+}

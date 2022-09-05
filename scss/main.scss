@@ -1,0 +1,22 @@
+@import './base/reset';
+
+@import './abtracts/mixin', './abtracts/variables';
+
+@import './components/form', './components/products';
+
+@import './subcomponents/contact', './subcomponents/btn' , './subcomponents/product', './subcomponents/result', './subcomponents/shipping', './subcomponents/responsive';
+
+.container{
+    width:75%;
+    margin:1rem auto;
+    padding:3rem;
+    h1{
+        text-align: center;
+    }
+    .row{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top:$myMeasure;
+        padding: 1rem;
+    }
+}

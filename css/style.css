@@ -1,0 +1,205 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Monteserrat;
+  src: url("../../fonts/Montserrat-Regular.ttf") format(“truetype”);
+}
+.col-left {
+  width: 45%;
+  opacity: 0.7;
+}
+
+.col-right {
+  width: 45%;
+  background-color: #eee;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  height: 65%;
+}
+
+.shipping .country-code .post-code label, .shipping .country-code .country label, .shipping .city label, .shipping .address label, .shipping .fullname label, .contact .phone label, .contact .email label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/***************************************/
+.contact {
+  margin-top: 2rem;
+}
+.contact .email {
+  margin: 1rem 0;
+}
+.contact .wrapper {
+  opacity: 0.5;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.contact .wrapper i {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+}
+.contact .wrapper input {
+  width: 100%;
+  padding: 5px 0 5px 25px;
+  line-height: 1.5rem;
+}
+
+.btn {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.btn button {
+  background-color: orange;
+  padding: 0.5rem;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px grey;
+}
+
+.product2, .product1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 4rem 4rem;
+  grid-gap: 0.5rem;
+}
+.product2 .image, .product1 .image {
+  grid-area: 1/1/3/2;
+}
+.product2 .image img, .product1 .image img {
+  width: 6rem;
+  height: 8rem;
+  border-radius: 15px;
+}
+.product2 .price, .product1 .price {
+  grid-area: 1/2/2/4;
+}
+.product2 .price p, .product1 .price p {
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  color: orange;
+}
+.product2 .price del, .product1 .price del {
+  color: black;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+.product2 .counter, .product1 .counter {
+  border: 1px solid gray;
+  border-radius: 5px;
+  grid-area: 2/2/3/4;
+  display: flex;
+  justify-content: space-around;
+  width: 7rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+}
+.product2 .counter button, .product1 .counter button {
+  width: 1rem;
+  border: none;
+  background-color: rgb(187, 186, 186);
+  border-radius: 3px;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.product2 .counter p, .product1 .counter p {
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+
+.result .result-total p, .result .result-shipping p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  opacity: 0.8;
+}
+
+.result {
+  margin-top: 3rem;
+}
+.result .result-shipping {
+  border-top: 0.2px solid darkgray;
+}
+.result .result-total {
+  margin-top: 0.5rem;
+  border-top: 0.2px solid darkgray;
+}
+.shipping {
+  margin-top: 2rem;
+}
+.shipping .wrapper {
+  opacity: 0.5;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.shipping .wrapper i {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+}
+.shipping .wrapper input {
+  width: 100%;
+  padding: 5px 0 5px 25px;
+  line-height: 1.5rem;
+}
+.shipping h2 {
+  margin-bottom: 1rem;
+}
+.shipping .country-code {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.shipping .country-code .country {
+  width: 27%;
+}
+.shipping .country-code .country select {
+  width: 100%;
+  padding: 0.6rem 0 0.6rem 1.3rem;
+}
+.shipping .country-code .post-code {
+  width: 70%;
+}
+.shipping .check {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 950px) {
+  .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .col-left, .col-right {
+    width: 90%;
+    margin: auto;
+  }
+}
+.container {
+  width: 75%;
+  margin: 1rem auto;
+  padding: 3rem;
+}
+.container h1 {
+  text-align: center;
+}
+.container .row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

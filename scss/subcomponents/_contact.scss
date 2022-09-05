@@ -1,0 +1,29 @@
+//EXTEND
+%label{
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/***************************************/
+
+.contact{
+    margin-top: $myMeasure;
+   .email{
+        margin:1rem 0;
+       label{
+            @extend %label;
+       } 
+    }
+
+   .phone{
+      label{
+        @extend  %label;
+      }
+   }
+
+    .wrapper{
+         @include wrapper(0.5);
+        
+     }
+
+}
